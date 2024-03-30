@@ -7,7 +7,7 @@ from services.tasks import set_price
 
 class Service(models.Model):
     name = models.CharField(max_length=100)
-    full_price = models.PositiveIntegerField(default=0)
+    full_price = models.PositiveIntegerField()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
